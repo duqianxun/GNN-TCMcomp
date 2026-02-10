@@ -24,7 +24,7 @@ python zaotingzhi_open.py --ingredient_feats rdkit --target_feats esm
 
 # Final training and evaluation on the test set using optimal parameters
 python ceshi_open.py --ingredient_feats rdkit --target_feats esm
-
+```
 
 ## Arguments
 --ingredient_feats: Ingredient feature type (maccs, morgan, or rdkit)
