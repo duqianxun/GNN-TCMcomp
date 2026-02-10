@@ -11,13 +11,13 @@ The project supports flexible feature selection via command-line arguments.
 Different scripts correspond to different stages of the experimental pipeline:
 
 ```bash
-# Train a base model with fixed hyperparameters
+# Run a preliminary experiment to explore appropriate training epochs under difficult learning settings
 python shiyunxing_open.py --ingredient_feats rdkit --target_feats esm
 
 # Hyperparameter search (hidden dimensions and learning rate)
 python base_open.py --ingredient_feats rdkit --target_feats esm
 
-# Epoch search using 5-fold cross-validation with early stopping
+# Epoch search with early stopping
 python zaotingzhi_open.py --ingredient_feats rdkit --target_feats esm
 
 # Final training and evaluation on the test set using optimal parameters
